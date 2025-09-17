@@ -10,9 +10,7 @@ public class MathExpressionService
     public MathExpressionService(String expression)
     {
         this.expression = expression.trim();
-        this.arArgs = new Double[2];
-        this.arArgs[0] = null;
-        this.arArgs[1] = null;
+        this.arArgs = new Double[]{null, null};
         this.parse().validate();
     }
 
